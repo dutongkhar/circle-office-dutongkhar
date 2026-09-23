@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+    background: #123b63;
+    color: white;
+    padding: 22px 20px;
+}
+
+.header-content {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.emblem {
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.header h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    background: #0b2d4a;
+}
+
+.nav-container {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+    display: block;
+}
+
+.nav-container a:hover {
+    background: #1c527f;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 360px;
+
+    background:
+        linear-gradient(
+            rgba(0, 45, 80, 0.60),
+            rgba(0, 45, 80, 0.60)
+        ),
+        url("./images/tawang.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 650px;
+}
+
+.hero button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #123b63;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* SECTIONS */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+.section h2,
+.about h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #123b63;
+}
+
+/* NOTICE */
+
+.notice-box {
+    background: white;
+    border-left: 5px solid #123b63;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.notice-box p {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #123b63;
+    margin-bottom: 10px;
+}
+
+/* ABOUT */
+
+.about {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 850px;
+    margin: 10px auto;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0b2d4a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+}
